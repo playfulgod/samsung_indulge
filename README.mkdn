@@ -6,7 +6,7 @@ HOW-TO BUILD:
 Getting the (right) source
 --------------------------
 
-First, we need to create directories for the build:
+First, we need to create directories for the build (Note: system can be named whatever you wish):
 
     $ mkdir -p ~/bin
 
