@@ -24,7 +24,7 @@ Now initialized the repository and pull the source (with my repos attached):
 
     $ cd ~/android/system/
     
-    $ repo init -u git://github.com/Silvist/android.git -b gingerbread
+    $ repo init -u git://github.com/playfulgod/android.git -b gingerbread
     
     $ repo sync -j16
 
@@ -37,7 +37,7 @@ We will need to reuse some proprietary files from the stock ROM:
 
     $ cd
     
-    $ cd ~/android/system/device/huawei/ascend2/
+    $ cd ~/android/system/device/samsung/indulge/
     
     $ ./extract-files.sh
 
@@ -57,7 +57,7 @@ Now, we build:
 
     $ cd ~/android/system
     
-    $ . build/envsetup.sh && brunch ascend2
+    $ . build/envsetup.sh && brunch indulge
 
 Installing CM7
 ---------------
