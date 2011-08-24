@@ -30,7 +30,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 # the the build-time selection of resources). The product definitions including
 # this file must pay attention to the fact that the first entry in the final
 # PRODUCT_LOCALES expansion must not be a density.
-PRODUCT_LOCALES += hdpi
+PRODUCT_LOCALES += mdpi
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_indulge

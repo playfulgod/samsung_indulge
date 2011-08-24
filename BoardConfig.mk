@@ -22,7 +22,7 @@
 # against the traditional rules of inheritance).
 
 # inherit from the proprietary version
--include vendor/samsung/indulge/BoardConfigVendor.mk
+#-include vendor/samsung/indulge/BoardConfigVendor.mk
 
 TARGET_IS_GALAXYS := true
 BOARD_USES_NEXUS_S_LIBS := true
@@ -89,7 +89,7 @@ WITH_A2DP := true
 
 USE_YAMAHA_SENSORS := true
 BOARD_USES_HGL := true
-BOARD_EGL_CFG := device/samsung/indulge/prebuilt/lib/egl/egl.cfg
+BOARD_EGL_CFG := vendor/samsung/indulge/proprietary/lib/egl/egl.cfg
 
 # Device related defines
 

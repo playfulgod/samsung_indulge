@@ -35,26 +35,24 @@ PRODUCT_COPY_FILES := \
     device/samsung/indulge/prebuilt/vold.fstab:system/etc/vold.fstab \
     device/samsung/indulge/prebuilt/vold.conf:system/etc/vold.conf \
     device/samsung/indulge/prebuilt/asound.conf:system/etc/asound.conf \
-    device/samsung/indulge/prebuilt/egl.cfg:system/lib/egl/egl.cfg
+    vendor/samsung/indulge/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg
 
 # Keylayout and Keychars
 PRODUCT_COPY_FILES += \
      device/samsung/indulge/prebuilt/keylayout/s3c-keypad.kl:system/usr/keylayout/s3c-keypad.kl \
      device/samsung/indulge/prebuilt/keylayout/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
      device/samsung/indulge/prebuilt/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
-     device/samsung/indulge/prebuilt/keylayout/qt602240_ts_input.kl:system/usr/keylayout/qt602240_ts_input.kl \
      device/samsung/indulge/prebuilt/keylayout/melfas-touchkey.kl:system/usr/keylayout/melfas-touchkey.kl \
      device/samsung/indulge/prebuilt/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
      device/samsung/indulge/prebuilt/keychars/sec_jack.kcm.bin:system/usr/keychars/sec_jack.kcm.bin \
      device/samsung/indulge/prebuilt/keychars/melfas-touchkey.kcm.bin:system/usr/keychars/melfas-touchkey.kcm.bin \
      device/samsung/indulge/prebuilt/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin \
-     device/samsung/indulge/prebuilt/keychars/qt602240_ts_input.kcm.bin:system/usr/keychars/qt602240_ts_input.kcm.bin \
      device/samsung/indulge/prebuilt/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin
 
 # Generated kcm keymaps
-#PRODUCT_PACKAGES := \
-#    cypress-touchkey.kcm \
-#    s3c-keypad.kcm
+PRODUCT_PACKAGES := \
+    cypress-touchkey.kcm \
+    s3c-keypad.kcm
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -62,17 +60,17 @@ PRODUCT_PACKAGES += \
     setup_fs
 
 # These are the OpenMAX IL configuration files
-#PRODUCT_COPY_FILES += \
-#    device/samsung/aries-common/sec_mm/sec_omx/sec_omx_core/secomxregistry:system/etc/secomxregistry \
-#    device/samsung/indulge/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
+PRODUCT_COPY_FILES += \
+    device/samsung/aries-common/sec_mm/sec_omx/sec_omx_core/secomxregistry:system/etc/secomxregistry \
+    device/samsung/indulge/prebuilt/media_profiles.xml:system/etc/media_profiles.xml
 
 # These are the OpenMAX IL modules
-#PRODUCT_PACKAGES += \
-#    libSEC_OMX_Core.aries \
-#    libOMX.SEC.AVC.Decoder.aries \
-#    libOMX.SEC.M4V.Decoder.aries \
-#    libOMX.SEC.M4V.Encoder.aries \
-#    libOMX.SEC.AVC.Encoder.aries
+PRODUCT_PACKAGES += \
+    libSEC_OMX_Core.aries \
+    libOMX.SEC.AVC.Decoder.aries \
+    libOMX.SEC.M4V.Decoder.aries \
+    libOMX.SEC.M4V.Encoder.aries \
+    libOMX.SEC.AVC.Encoder.aries
 
 # Misc other modules
 PRODUCT_PACKAGES += \
@@ -87,7 +85,7 @@ PRODUCT_PACKAGES += \
 
 # apns config file
 PRODUCT_COPY_FILES += \
-        vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+        device/samsung/indulge/prebuilt/apns-conf.xml:system/etc/apns-conf.xml
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -102,7 +100,7 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
     frameworks/base/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
-    packages/wallpapers/Livindulgeker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
+    packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
