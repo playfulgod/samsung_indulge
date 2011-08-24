@@ -171,117 +171,117 @@ done
 
 # Camera
 PRODUCT_COPY_FILES += \\
-    vendor/samsung/common/aries/proprietary/libcamera.so:obj/lib/libcamera.so \\
-    vendor/samsung/common/aries/proprietary/libcamera.so:system/lib/libcamera.so \\
-    vendor/samsung/common/aries/proprietary/libcamera_client.so:system/lib/libcamera.so \\
-    vendor/samsung/common/aries/proprietary/libActionShot.so:system/lib/libActionShot.so \\
-    vendor/samsung/common/aries/proprietary/libCaMotion.so:system/lib/libCaMotion.so \\
-    vendor/samsung/common/aries/proprietary/libcaps.so:system/lib/libcaps.so \\
-    vendor/samsung/common/aries/proprietary/libPanoraMax1.so:system/lib/libPanoraMax1.so \\
-    vendor/samsung/common/aries/proprietary/libPlusMe.so:system/lib/libPlusMe.so \\
-    vendor/samsung/common/aries/proprietary/libarccamera.so:system/lib/libarccamera.so \\
-    vendor/samsung/common/aries/proprietary/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \\
-    vendor/samsung/common/aries/proprietary/libcameraservice.so:system/lib/libcameraservice.so \\
-    vendor/samsung/common/aries/proprietary/libseccamera.so:system/lib/libseccamera.so \\
-    vendor/samsung/common/aries/proprietary/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \\
-    vendor/samsung/common/aries/proprietary/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \\
-    vendor/samsung/common/aries/proprietary/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libcamera.so:obj/lib/libcamera.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libcamera.so:system/lib/libcamera.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libcamera_client.so:system/lib/libcamera.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libActionShot.so:system/lib/libActionShot.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libcaps.so:system/lib/libcaps.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libPlusMe.so:system/lib/libPlusMe.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \\
+    vendor/samsung/__DEVICE__/proprietary/lib/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \\
+    vendor/samsung/__DEVICE__/proprietary/lib/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \\
 
 # WiFi & Bluetooth
 PRODUCT_COPY_FILES += \\
-    vendor/samsung/__DEVICE__/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \\
-    vendor/samsung/__DEVICE__/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \\
-    vendor/samsung/__DEVICE__/proprietary/etc/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \\
-    vendor/samsung/__DEVICE__/proprietary/etc/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \\
-    vendor/samsung/__DEVICE__/proprietary/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \\
-    vendor/samsung/__DEVICE__/proprietary/bin/BCM4329B1_002.002.023.0417.0430.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/etc/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/etc/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/BCM4329B1_002.002.023.0417.0430.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd \\
 
 #GPS
 PRODUCT_COPY_FILES += \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libgps.so:system/lib/libgps.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libsecgps.so:system/lib/libsecgps.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libgps.so:system/lib/libgps.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libsecgps.so:system/lib/libsecgps.so \\
 
 
 # Firmware files
 PRODUCT_COPY_FILES += \\
-    vendor/samsung/__DEVICE__/proprietary/seh/CE147F00.bin:system/firmware/CE147F00.bin \\
-    vendor/samsung/__DEVICE__/proprietary/seh/CE147F01.bin:system/firmware/CE147F01.bin \\
-    vendor/samsung/__DEVICE__/proprietary/seh/CE147F02.bin:system/firmware/CE147F02.bin \\
-    vendor/samsung/__DEVICE__/proprietary/seh/CE147F03.bin:system/firmware/CE147F03.bin
+    vendor/samsung/__DEVICE__/proprietaryroprietary/seh/CE147F00.bin:system/firmware/CE147F00.bin \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/seh/CE147F01.bin:system/firmware/CE147F01.bin \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/seh/CE147F02.bin:system/firmware/CE147F02.bin \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/seh/CE147F03.bin:system/firmware/CE147F03.bin
 
 # Display (3D)
 PRODUCT_COPY_FILES += \\
-    vendor/samsung/__DEVICE__/proprietary/lib/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libIMGegl.so:system/lib/libIMGegl.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libpvr2d.so:system/lib/libpvr2d.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libsrv_init.so:system/lib/libsrv_init.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libsrv_um.so:system/lib/libsrv_um.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \\
-    vendor/samsung/__DEVICE__/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libIMGegl.so:system/lib/libIMGegl.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libpvr2d.so:system/lib/libpvr2d.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libsrv_init.so:system/lib/libsrv_init.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libsrv_um.so:system/lib/libsrv_um.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/pvrsrvinit:system/bin/pvrsrvinit
 
 # Sensors, Lights etc
 PRODUCT_COPY_FILES += \\
-    vendor/samsung/__DEVICE__/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
 
 # RIL
 PRODUCT_COPY_FILES += \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libril.so:system/lib/libril.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libsec-ril40.so:system/lib/libsec-ril40.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libril.so:system/lib/libril.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libsec-ril40.so:system/lib/libsec-ril40.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libsecril-client.so:system/lib/libsecril-client.so
 
 # PPP
 PRODUCT_COPY_FILES += \\
-    vendor/samsung/__DEVICE__/proprietary/bin/pppd_runner:system/bin/pppd_runner
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/pppd_runner:system/bin/pppd_runner
 
 #Sensors
 PRODUCT_COPY_FILES += \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libsensor_yamaha.so:system/lib/libsensor_yamaha.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libsensor_yamaha_test.so:system/lib/libsensor_yamaha_test.so \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libms3c_yamaha.so:system/lib/libms3c_yamaha.so \\
-    vendor/samsung/__DEVICE__/proprietary/bin/sensorserver_yamaha:system/bin/sensorserver_yamaha \\
-    vendor/samsung/__DEVICE__/proprietary/bin/sensorcalibutil_yamaha:system/bin/sensorcalibutil_yamaha \\
-    vendor/samsung/__DEVICE__/proprietary/bin/sensorstatutil_yamaha:system/bin/sensorstatutil_yamaha
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libsensor_yamaha.so:system/lib/libsensor_yamaha.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libsensor_yamaha_test.so:system/lib/libsensor_yamaha_test.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libms3c_yamaha.so:system/lib/libms3c_yamaha.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/sensorserver_yamaha:system/bin/sensorserver_yamaha \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/sensorcalibutil_yamaha:system/bin/sensorcalibutil_yamaha \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/sensorstatutil_yamaha:system/bin/sensorstatutil_yamaha
 
 #
 # WIMAX
 #
 #PRODUCT_COPY_FILES += \\
-#    vendor/samsung/__DEVICE__/proprietary/lib/libSECmWiMAXcAPI.so:system/lib/libSECmWiMAXcAPI.so \\
-#    vendor/samsung/__DEVICE__/proprietary/lib/libWiMAXLineTest.so:system/lib/libWiMAXLineTest.so \\
-#    vendor/samsung/__DEVICE__/proprietary/lib/libWiMAXNative.so:system/lib/libWiMAXNative.so \\
-#    vendor/samsung/__DEVICE__/proprietary/lib/libWiMAXNativeODB.so:system/lib/libWiMAXNativeODB.so \\
-#    vendor/samsung/__DEVICE__/proprietary/lib/libwimaxne.so:system/lib/libwimaxne.so \\
-#    vendor/samsung/__DEVICE__/proprietary/lib/libwimaxwtm.so:system/lib/libwimaxwtm.so \\
-#    vendor/samsung/__DEVICE__/proprietary/etc/wimax_boot.bin:system/etc/wimax_boot.bin \\
-#    vendor/samsung/__DEVICE__/proprietary/etc/wimaxfw.bin:system/etc/wimaxfw.bin \\
-#    vendor/samsung/__DEVICE__/proprietary/etc/wimaxloader.bin:system/etc/wimaxloader.bin
+#    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libSECmWiMAXcAPI.so:system/lib/libSECmWiMAXcAPI.so \\
+#    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libWiMAXLineTest.so:system/lib/libWiMAXLineTest.so \\
+#    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libWiMAXNative.so:system/lib/libWiMAXNative.so \\
+#    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libWiMAXNativeODB.so:system/lib/libWiMAXNativeODB.so \\
+#    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libwimaxne.so:system/lib/libwimaxne.so \\
+#    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libwimaxwtm.so:system/lib/libwimaxwtm.so \\
+#    vendor/samsung/__DEVICE__/proprietaryroprietary/etc/wimax_boot.bin:system/etc/wimax_boot.bin \\
+#    vendor/samsung/__DEVICE__/proprietaryroprietary/etc/wimaxfw.bin:system/etc/wimaxfw.bin \\
+#    vendor/samsung/__DEVICE__/proprietaryroprietary/etc/wimaxloader.bin:system/etc/wimaxloader.bin
 
 # Misc
 PRODUCT_COPY_FILES += \\
-    vendor/samsung/__DEVICE__/proprietary/bin/immvibed:system/bin/immvibed \\
-    vendor/samsung/__DEVICE__/proprietary/bin/logwrapper:system/bin/logwrapper \\
-    vendor/samsung/__DEVICE__/proprietary/bin/immvibed:system/bin/immvibed \\
-    vendor/samsung/__DEVICE__/proprietary/bin/killmediaserver:system/bin/killmediaserver \\
-    vendor/samsung/__DEVICE__/proprietary/bin/notified_event:system/bin/notified_event \\
-    vendor/samsung/__DEVICE__/proprietary/bin/mfgloader:system/bin/mfgloader \\
-    vendor/samsung/__DEVICE__/proprietary/bin/netcfg:system/bin/netcfg \\
-    vendor/samsung/__DEVICE__/proprietary/bin/wlservice:system/bin/wlservice \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libnetutils.so:system/lib/libnetutils.so
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/immvibed:system/bin/immvibed \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/logwrapper:system/bin/logwrapper \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/immvibed:system/bin/immvibed \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/killmediaserver:system/bin/killmediaserver \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/notified_event:system/bin/notified_event \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/mfgloader:system/bin/mfgloader \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/netcfg:system/bin/netcfg \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/wlservice:system/bin/wlservice \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libnetutils.so:system/lib/libnetutils.so
 
 # LPM charging files.
 PRODUCT_COPY_FILES += \\
-    vendor/samsung/__DEVICE__/proprietary/bin/playlpm:system/bin/playlpm \\
-    vendor/samsung/__DEVICE__/proprietary/bin/charging_mode:system/bin/charging_mode \\
-    vendor/samsung/__DEVICE__/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \\
-    vendor/samsung/__DEVICE__/proprietary/media/battery_charging_*.qmg:system/media/battery_charging_*.qmg \\
-    vendor/samsung/__DEVICE__/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \\
-    vendor/samsung/__DEVICE__/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/playlpm:system/bin/playlpm \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/bin/charging_mode:system/bin/charging_mode \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/media/battery_charging_*.qmg:system/media/battery_charging_*.qmg \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \\
+    vendor/samsung/__DEVICE__/proprietaryroprietary/media/Disconnected.qmg:system/media/Disconnected.qmg
 
 EOF
 
