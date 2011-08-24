@@ -1,11 +1,11 @@
-# mount point	fstype		device
+# mount point	fstype	   fstype2	device
 
-/sdcard		vfat		/dev/block/mmcblk0p1
-/system		rfs		/dev/block/stl10
-/cache		rfs		/dev/block/stl12
-/data		rfs		/dev/block/stl11
-/boot		mtd		boot
-/recovery	mtd		recovery
-/bootloader	mtd		bootloader
-/radio		mtd		radio
-tmpfs           tmpfs           /mnt/sdcard/.android_secure
+/sdcard		vfat		        /dev/block/mmcblk0p1
+/system		ext4	     rfs        /dev/block/stl10
+/cache		ext4	     rfs  	/dev/block/stl12
+/data		ext4	     rfs        /dev/block/stl11
+/boot		mtd		        boot
+/recovery	mtd		        recovery
+/bootloader	mtd		        bootloader
+/radio		mtd		        radio
+tmpfs           tmpfs                   /mnt/sdcard/.android_secure
