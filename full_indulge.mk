@@ -34,7 +34,7 @@ PRODUCT_LOCALES += mdpi
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_indulge
-PRODUCT_DEVICE := indulge
+PRODUCT_DEVICE := SCH-R910
 PRODUCT_BRAND := Samsung
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := SCH-R910
