@@ -18,4 +18,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_indulge.mk
+    $(LOCAL_DIR)/indulge.mk

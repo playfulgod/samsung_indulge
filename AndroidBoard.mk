@@ -20,10 +20,22 @@
 
 LOCAL_PATH := $(call my-dir)
 
+#
+# Boot files
+#
+#ifeq ($(TARGET_PREBUILT_KERNEL),)
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
+#endif
+
+file := $(INSTALLED_KERNEL_TARGET)
+ALL_PREBUILT += $(file)
+$(file): $(TARGET_PREBUILT_KERNEL) | $(ACP)
+	$(transform-prebuilt-to-target)
+
 # Least specific includes go first, so that they can get
 # overridden further down
 
 include $(CLEAR_VARS)
 
 # include the non-open-source counterpart to this file
--include vendor/samsung/epic/AndroidBoardVendor.mk
+-include vendor/samsung/indulge/AndroidBoardVendor.mk

@@ -32,7 +32,7 @@ BOARD_USES_COPYBIT := true
 BOARD_UMS_LUNFILE := "/sys/devices/platform/s3c-usbgadget/gadget/lun0/file"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/s3c-usbgadget/gadget/lun"
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
-BOARD_USES_BML_OVER_MTD := true
+BOARD_USES_BML_OVER_MTD := false
 
 DEFAULT_FB_NUM := 0
 BUILD_PV_VIDEO_ENCODERS := 1
@@ -40,7 +40,7 @@ BOARD_V4L2_DEVICE := /dev/video1
 BOARD_CAMERA_DEVICE := /dev/video0
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := aries
+TARGET_BOOTLOADER_BOARD_NAME := indulge910
 
 TARGET_BOARD := SCH-R910
 TARGET_BOARD_PLATFORM := s5pc110
@@ -89,7 +89,7 @@ WITH_A2DP := true
 
 USE_YAMAHA_SENSORS := true
 BOARD_USES_HGL := true
-BOARD_EGL_CFG := vendor/samsung/indulge/proprietary/lib/egl/egl.cfg
+BOARD_EGL_CFG := vendor/samsung/indulge/proprietary/R910/lib/egl/egl.cfg
 
 # Device related defines
 
@@ -105,12 +105,21 @@ BOARD_USES_BMLUTILS := true
 TARGET_NO_RADIOIMAGE := true
 TARGET_NO_BOOTLOADER := true
 
-BOARD_BOOTIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00280000)
-BOARD_RECOVERYIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00500000)
-BOARD_SYSTEMIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x07500000)
-BOARD_USERDATAIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x04ac0000)
-# The size of a block that can be marked bad.
+BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00380000
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00480000
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x08c60000
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
+
+TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x08c60000
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
+
+# custom boot and recovery bml locations other than bml 7 & 8
+BOARD_BML_BOOT := /dev/block/bml8
+BOARD_BML_RECOVERY := /dev/block/bml9
+
+BOARD_RECOVERY_HANDLES_MOUNT := true
 
 BOARD_USE_USB_MASS_STORAGE_SWITCH := true
 BOARD_USES_GPSSHIM := true

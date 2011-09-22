@@ -19,6 +19,11 @@
 # application settings that are stored in resourced.
 DEVICE_PACKAGE_OVERLAYS := device/samsung/indulge/overlay
 
+PRODUCT_NAME := full_indulge
+PRODUCT_BRAND := MetroPCS
+PRODUCT_DEVICE := indulge
+PRODUCT_MODEL := SCH-R910
+
 # Telephony property for CDMA
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cdma.home.operator.numeric=311660 \
@@ -35,7 +40,7 @@ PRODUCT_COPY_FILES := \
     device/samsung/indulge/prebuilt/vold.fstab:system/etc/vold.fstab \
     device/samsung/indulge/prebuilt/vold.conf:system/etc/vold.conf \
     device/samsung/indulge/prebuilt/asound.conf:system/etc/asound.conf \
-    vendor/samsung/indulge/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg
+    vendor/samsung/indulge/proprietary/R910/lib/egl/egl.cfg:system/lib/egl/egl.cfg
 
 # Keylayout and Keychars
 PRODUCT_COPY_FILES += \
@@ -102,6 +107,108 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
+# Camera
+PRODUCT_COPY_FILES += \
+    vendor/samsung/indulge/proprietary/R910/lib/libcamera.so:obj/lib/libcamera.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libcamera_client.so:system/lib/libcamera_client.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libActionShot.so:system/lib/libActionShot.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libCaMotion.so:system/lib/libCaMotion.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libcaps.so:system/lib/libcaps.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libPlusMe.so:system/lib/libPlusMe.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libarccamera.so:system/lib/libarccamera.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libcameraservice.so:system/lib/libcameraservice.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libseccamera.so:system/lib/libseccamera.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
+    vendor/samsung/indulge/proprietary/R910/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv 
+ 
+
+# WiFi & Bluetooth
+PRODUCT_COPY_FILES += \
+    vendor/samsung/indulge/proprietary/R910/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+    vendor/samsung/indulge/proprietary/R910/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+    vendor/samsung/indulge/proprietary/R910/etc/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
+    vendor/samsung/indulge/proprietary/R910/etc/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \
+    vendor/samsung/indulge/proprietary/R910/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
+    vendor/samsung/indulge/proprietary/R910/bin/BCM4329B1_002.002.023.0589.0637.hcd:system/bin/BCM4329B1_002.002.023.0589.0637.hcd 
+
+#GPS
+PRODUCT_COPY_FILES += \
+    vendor/samsung/indulge/proprietary/R910/lib/libgps.so:system/lib/libgps.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libsecgps.so:system/lib/libsecgps.so 
+
+# Display (3D)
+PRODUCT_COPY_FILES += \
+    vendor/samsung/indulge/proprietary/R910/lib/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \
+    vendor/samsung/indulge/proprietary/R910/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    vendor/samsung/indulge/proprietary/R910/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
+    vendor/samsung/indulge/proprietary/R910/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libIMGegl.so:system/lib/libIMGegl.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libpvr2d.so:system/lib/libpvr2d.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libsrv_init.so:system/lib/libsrv_init.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libsrv_um.so:system/lib/libsrv_um.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libglslcompiler.so:system/lib/libglslcompiler.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
+    vendor/samsung/indulge/proprietary/R910/bin/pvrsrvinit:system/bin/pvrsrvinit
+
+# Sensors, Lights etc
+PRODUCT_COPY_FILES += \
+    vendor/samsung/indulge/proprietary/R910/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so 
+
+
+# RIL
+PRODUCT_COPY_FILES += \
+    vendor/samsung/indulge/proprietary/R910/lib/libril.so:system/lib/libril.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libsec-ril40-lte.so:system/lib/libsec-ril40-lte.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libsec-ril40-cdma.so:system/lib/libsec-ril40-cdma.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libsecril-client.so:system/lib/libsecril-client.so
+
+# PPP
+PRODUCT_COPY_FILES += \
+    vendor/samsung/indulge/proprietary/R910/bin/pppd_runner:system/bin/pppd_runner
+
+#Sensors
+PRODUCT_COPY_FILES += \
+    vendor/samsung/indulge/proprietary/R910/lib/libsensor_yamaha.so:system/lib/libsensor_yamaha.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libsensor_yamaha_test.so:system/lib/libsensor_yamaha_test.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libms3c_yamaha.so:system/lib/libms3c_yamaha.so \
+    vendor/samsung/indulge/proprietary/R910/bin/sensorserver_yamaha:system/bin/sensorserver_yamaha \
+    vendor/samsung/indulge/proprietary/R910/bin/sensorcalibutil_yamaha:system/bin/sensorcalibutil_yamaha \
+    vendor/samsung/indulge/proprietary/R910/bin/sensorstatutil_yamaha:system/bin/sensorstatutil_yamaha
+
+# Misc
+PRODUCT_COPY_FILES += \
+    vendor/samsung/indulge/proprietary/R910/bin/immvibed:system/bin/immvibed \
+    vendor/samsung/indulge/proprietary/R910/bin/logwrapper:system/bin/logwrapper \
+    vendor/samsung/indulge/proprietary/R910/bin/immvibed:system/bin/immvibed \
+    vendor/samsung/indulge/proprietary/R910/bin/killmediaserver:system/bin/killmediaserver \
+    vendor/samsung/indulge/proprietary/R910/bin/notified_event:system/bin/notified_event \
+    vendor/samsung/indulge/proprietary/R910/bin/mfgloader:system/bin/mfgloader \
+    vendor/samsung/indulge/proprietary/R910/bin/netcfg:system/bin/netcfg \
+    vendor/samsung/indulge/proprietary/R910/bin/wlservice:system/bin/wlservice \
+    vendor/samsung/indulge/proprietary/R910/lib/libnetutils.so:system/lib/libnetutils.so
+
+# LPM charging files.
+PRODUCT_COPY_FILES += \
+    vendor/samsung/indulge/proprietary/R910/bin/playlpm:system/bin/playlpm \
+    vendor/samsung/indulge/proprietary/R910/bin/charging_mode:system/bin/charging_mode \
+    vendor/samsung/indulge/proprietary/R910/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
+    vendor/samsung/indulge/proprietary/R910/media/battery_charging_*.qmg:system/media/battery_charging_*.qmg \
+    vendor/samsung/indulge/proprietary/R910/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
+    vendor/samsung/indulge/proprietary/R910/media/Disconnected.qmg:system/media/Disconnected.qmg
+
+# Audio
+PRODUCT_COPY_FILES += \
+    vendor/samsung/indulge/proprietary/R910/lib/libaudio.so:obj/lib/libaudio.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libaudiopolicy.so:obj/lib/libaudiopolicy.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libaudiopolicy.so:system/lib/libaudiopolicy.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libaudio.so:system/lib/libaudio.so \
+    vendor/samsung/indulge/proprietary/R910/lib/libaudioflinger.so:system/lib/libaudioflinger.so
+
+
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
 PRODUCT_PROPERTY_OVERRIDES := \
@@ -136,18 +243,18 @@ PRODUCT_COPY_FILES += \
     device/samsung/indulge/prebuilt/init.smdkc110.rc:root/init.smdkc110.rc \
 
 # We are using a prebuilt kernel for now, to ease building. This will be changed later.
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/samsung/indulge/kernel
-else
-    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
+#ifeq ($(TARGET_PREBUILT_KERNEL),)
+#    LOCAL_KERNEL := device/samsung/indulge/kernel
+#else
+#    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+#endif
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_KERNEL):kernel
 
 
 # See comment at the top of this file. This is where the other
 # half of the device-specific product definition file takes care
-# of the aspects that require proprietary drivers that aren't
+# of the aspects that require proprietary/R910 drivers that aren't
 # commonly available
 $(call inherit-product-if-exists, vendor/samsung/indulge/indulge-vendor.mk)
